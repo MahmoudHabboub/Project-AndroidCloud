@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="#536DFE"
+    >
+
+    <TextView
+        android:id="@+id/login_txtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:text="تسجيل حساب جديد"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_password_2"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="50dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_email_2">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password_edtxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:drawableRight="@drawable/ic_remove_red_eye_black_24dp"
+            android:drawablePadding="15dp"
+            android:hint="كلمة المرور"
+            android:inputType="textPassword"
+            android:layoutDirection="ltr"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.57"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="كلمة المرور"
+            app:met_helperText=""
+            app:met_primaryColor="#536DFE" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_email_2"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFFFFF"
+        android:elevation="50dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_txtv2">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email_edtxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:drawableRight="@drawable/ic_email_black_24dp"
+            android:drawablePadding="15dp"
+            android:hint="البريد الإلكتروني"
+            android:inputType="text"
+            android:layoutDirection="rtl"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.57"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="البريد الإلكتروني"
+            app:met_helperText="xxxxx@xxxx.com"
+            app:met_primaryColor="#536DFE" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/login_btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FFFFFF"
+        android:padding="15dp"
+        android:text="سجل الآن"
+        android:textColor="#448AFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:theme="@style/Widget.AppCompat.Button.Colored"
+        app:layout_constraintEnd_toEndOf="@+id/cardView_password_2"
+        app:layout_constraintStart_toStartOf="@+id/cardView_password_2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_password_2" />
+
+    <TextView
+        android:id="@+id/signup_txtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="تمتلك حساب؟ تسجيل الدخول"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/login_btn2"
+        app:layout_constraintStart_toStartOf="@+id/login_btn2"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

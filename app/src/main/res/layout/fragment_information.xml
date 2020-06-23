@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InformationFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutCompat3"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@drawable/roundedshape"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="220dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:elevation="50dp"
+                    app:cardCornerRadius="13dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:shadowColor="#7F000000"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="ما هو COVID19 ؟"
+                        android:textColor="#FF5252"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#FF5252"
+                    android:elevation="50dp"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:shadowColor="#7F000000"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="هو مرض معد يسببه فيروس كورونا المُكتشف مؤخراً و فيروسات كورونا هي فصيلة كبيرة من الفيروسات التي قد تسبب المرض للحيوان والإنسان."
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:fontFamily="sans-serif"
+                android:gravity="start|center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="5dp"
+                android:text="أعراض المرض "
+                android:textColor="#536DFE"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="28dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="24dp"
+                android:background="#536DFE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat3" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/symptoms_recyclerview"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="156dp"
+                android:layout_marginRight="156dp"
+                android:fontFamily="sans-serif"
+                android:gravity="start|center"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="5dp"
+                android:text="طرق انتقال المرض"
+                android:textColor="#536DFE"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/view222"
+                app:layout_constraintTop_toTopOf="@+id/view222" />
+
+            <View
+                android:id="@+id/view222"
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="24dp"
+                android:background="#536DFE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/symptoms_recyclerview"
+                android:layout_marginLeft="28dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/contagion_recyclerview"
+                android:layout_width="0dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/symptoms_recyclerview"
+                app:layout_constraintStart_toStartOf="@+id/symptoms_recyclerview"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="#FF5252"
+                android:elevation="50dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/contagion_recyclerview"
+                app:layout_constraintStart_toStartOf="@+id/contagion_recyclerview"
+                app:layout_constraintTop_toBottomOf="@+id/contagion_recyclerview">
+
+                <TextView
+                    android:id="@+id/textView876"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="8dp"
+                    android:paddingRight="5dp"
+                    android:text="تنويه ! "
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/view222"
+                    app:layout_constraintTop_toTopOf="@+id/view222"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:shadowColor="#7F000000"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:text="قد يعاني بعض المرضى من الآلام والأوجاع، أو احتقان الأنف، أو الرشح، أو ألم الحلق، أو الإسهال. وعادة ما تكون هذه الأعراض خفيفة وتبدأ تدريجياً. ويصاب بعض الناس بالعدوى دون أن تظهر عليهم أي أعراض ودون أن يشعروا بالمرض."
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
